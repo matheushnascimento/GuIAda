@@ -9,10 +9,12 @@
 :root {
   font-size: 62.5%;
 
-  --ccl-yellow: #f6cb31;
-  --ccl-blue: #192040;
-  --ccl-purple: #6736dd;
-  --ccl-white: #e5e5e5;
+  --cc-yellow: #f6cb31;
+  --cc-blue: #192040;
+  --cc-blue_1: #273366;
+  --cc-purple: #6736dd;
+  --cc-purple_1: #833eff;
+  --cc-white: #e5e5e5;
 
   --ff-emphasis: 'Concert One', sans-serif;
   --ff-content: 'Open Sans', sans-serif;
@@ -20,16 +22,25 @@
 
 html * {
   font-family: var(--ff-content);
-  color: var(--ccl-white);
+  color: var(--cc-white);
 
-  background: var(--ccl-blue);
 }
 
 html a {
   text-decoration: none;
 }
 
-/* HEADER */
+body {
+  width: 100vw;
+
+  font-size: 1.6rem;
+
+  text-align: center;
+
+  background: var(--cc-blue)
+}
+
+
 
 .hide {
   display: none;
@@ -37,8 +48,18 @@ html a {
 
 i {
   font-size: 4rem;
-  color: var(--ccl-yellow);
+  color: var(--cc-yellow);
 }
+
+.button {
+  margin: 3rem 0 2rem;
+  padding: 1rem;
+  border: 2px solid var(--cc-yellow);
+  color: var(--cc-yellow);
+  justify-content: center;
+}
+
+/* HEADER */
 
 header {
   display: flex;
@@ -46,6 +67,7 @@ header {
   justify-content: space-between;
 
   padding: 1rem;
+
 }
 
 nav {
@@ -58,12 +80,88 @@ nav {
 }
 
 nav a {
-  font-family: var(--ff-emphasis);
   font-size: 2rem;
+}
+
+nav a,
+h1,
+strong,
+h2,
+h3,
+span {
+  font-family: var(--ff-emphasis);
 }
 
 header .logo {
   border-radius: 50%;
+}
+
+/* MAIN */
+/* section */
+
+article section:nth-child(even) {
+  background: var(--cc-blue_1);
+  box-shadow: 1px 1px 1rem rgba(0, 0, 0, .5);
+}
+
+h1 {
+  margin: 3rem 0;
+}
+
+h1,
+h1 strong {
+  font-size: 7rem;
+}
+
+strong {
+  color: var(--cc-purple);
+}
+
+.cta-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+/* resources */
+
+#resources *:not(#all_resources) {
+  padding: 1rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 400;
+  padding-top: 2rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+}
+
+span,
+.resources a {
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+
+  font-size: 2rem;
+  color: var(--cc-yellow);
+}
+
+
+#all_resources .item {
+  background: var(--cc-purple_1);
+}
+
+#all_resources .item:nth-child(odd) {
+  background: var(--cc-purple);
 }
 
 /* ANIMAÇÕES */
