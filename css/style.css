@@ -106,8 +106,11 @@ header .logo {
 /* MAIN */
 /* section */
 
-section {
+section:not(footer section) {
+  min-height: 50vw;
+
   display: flex;
+  justify-content: center;
   flex-direction: column;
 }
 
