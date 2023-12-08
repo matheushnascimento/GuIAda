@@ -5,7 +5,13 @@
   }
 
   .button {
+    width: 50%;
+
     transition: .3s;
+  }
+
+  header {
+    justify-content: space-evenly;
   }
 
   .button:hover,
@@ -25,12 +31,11 @@
   nav {
     display: flex !important;
     flex-direction: row;
-    gap: 3rem;
+    gap: 1.5rem;
   }
 
   nav a {
-    padding: 1rem;
-    border-radius: .4rem;
+    white-space: nowrap;
   }
 
   nav a:hover {
@@ -42,5 +47,28 @@
 
   #burger_button {
     display: none;
+  }
+
+  .resources-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .resources-wrapper .item {
+    text-align: left;
+    max-width: 35rem;
+  }
+
+  .advanced-resources {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
   }
 }

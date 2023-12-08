@@ -50,8 +50,8 @@ i {
 .button {
   justify-content: center;
 
-  margin: 3rem 1rem 2rem;
   padding: 1rem;
+  margin: 3rem auto;
 
   border: 2px solid var(--cc-yellow);
   border-radius: .4rem;
@@ -73,7 +73,7 @@ header {
   align-items: center;
   justify-content: space-between;
 
-  padding: 1rem;
+  padding: 3rem;
 
 }
 
@@ -139,16 +139,19 @@ strong {
 section img {
   width: 90vw;
   height: 50rem;
+
   object-fit: cover;
 
-  margin: auto;
+  margin: 1rem auto;
 
   border-radius: 2rem;
+
+  box-shadow: 1px 1px 1rem rgba(0, 0, 0, .5);
 }
 
 /* resources */
 
-#resources *:not(#all_resources) {
+#resources *:not(#all_resources, img) {
   padding: 1rem;
 }
 
@@ -192,7 +195,7 @@ article section:last-child {
 
 /* FOOTER */
 
-.link-wrapper {
+.link-wrapper a {
   display: flex;
   flex-direction: column;
 
