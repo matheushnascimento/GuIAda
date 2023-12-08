@@ -107,7 +107,7 @@ header .logo {
 /* section */
 
 section:not(footer section) {
-  min-height: 50vw;
+  min-height: 100%;
 
   display: flex;
   justify-content: center;
@@ -140,10 +140,10 @@ strong {
 }
 
 section img {
-  width: 90vw;
+  -width: 70vw;
   height: 50rem;
 
-  object-fit: cover;
+  object-fit: unset;
 
   margin: 1rem auto;
 
