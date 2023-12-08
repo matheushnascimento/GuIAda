@@ -20,11 +20,17 @@
   --ff-content: 'Open Sans', sans-serif;
 }
 
+html,
+body {
+  max-width: 100vw;
+}
+
 html * {
   font-family: var(--ff-content);
   color: var(--cc-white);
 
 }
+
 
 html a {
   text-decoration: none;
@@ -124,7 +130,7 @@ h1 {
 
 h1,
 h1 strong {
-  font-size: 7rem;
+  font-size: clamp(5rem, 1rem, 7rem);
 }
 
 strong {
@@ -191,7 +197,8 @@ article section:last-child {
   text-decoration: underline;
 }
 
-footer pre * {
+footer p *,
+pre i {
   font-size: 1.8rem;
 }
 
