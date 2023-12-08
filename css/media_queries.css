@@ -1,0 +1,46 @@
+@media (min-width: 900px) {
+  :root {
+    --cc-purple: #6736dd;
+    --cc-yellow: #f6cb31;
+  }
+
+  .button {
+    transition: .3s;
+  }
+
+  .button:hover,
+  nav a:hover {
+    transform: translateY(-.5rem);
+  }
+
+  .logo {
+    transition: .3s;
+  }
+
+  .logo:hover {
+    border-radius: .5rem;
+    transform: scale(1.1);
+  }
+
+  nav {
+    display: flex !important;
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  nav a {
+    padding: 1rem;
+    border-radius: .4rem;
+  }
+
+  nav a:hover {
+    color: var(--cc-yellow);
+
+    text-shadow: 1px 1px 1rem rgba(0, 0, 0, .3);
+    transition: .3s
+  }
+
+  #burger_button {
+    display: none;
+  }
+}
