@@ -109,8 +109,9 @@ header .logo {
 /* MAIN */
 /* section */
 
+
 section:not(footer section) {
-  min-height: 100%;
+  min-height: 75vh;
 
   display: flex;
   justify-content: center;
