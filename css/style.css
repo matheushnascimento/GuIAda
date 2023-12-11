@@ -101,6 +101,9 @@ span {
 
 header .logo {
   border-radius: 50%;
+
+  -webkit-animation: slide-in-top 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-top 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /* MAIN */
@@ -139,11 +142,13 @@ strong {
   margin: 3rem 0;
 }
 
-section img {
-  -width: 70vw;
-  height: 50rem;
+article section:first-child img {
+  max-width: 40vw;
+}
 
-  object-fit: unset;
+section img {
+  max-width: 50vw;
+  max-height: 75vh;
 
   margin: 1rem auto;
 
@@ -194,6 +199,12 @@ span,
 /* ARTICLE SECTION:last-child */
 article section:last-child {
   padding: 1rem;
+}
+
+section.cta {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/plane.jpg');
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 /* FOOTER */

@@ -19,6 +19,12 @@
     grid-template-rows: repeat(3, 1fr);
   }
 
+  section .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   #all_resources div:nth-of-type(even) {
     background: var(--cc-blue_1) !important;
     box-shadow: 1px 1px 1rem rgba(0, 0, 0, .5);
@@ -35,10 +41,6 @@
     width: 50%;
 
     transition: .3s;
-  }
-
-  header {
-    justify-content: space-evenly;
   }
 
   .button:hover,
