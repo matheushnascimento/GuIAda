@@ -93,6 +93,7 @@ nav {
 
 nav a {
   font-size: 2rem;
+  line-height: 3rem;
 }
 
 nav a,
@@ -231,23 +232,8 @@ pre i {
   font-size: 1.8rem;
 }
 
-footer div:not(.link-wrapper) {
-  display: grid;
-  grid-template-areas:
-    "title title"
-    "btn1 btn2";
-}
-
-footer div h3 {
-  grid-area: title;
-}
-
-footer div a:first-child {
-  grid-area: btn1;
-}
-
-footer div a:last-of-type {
-  grid-area: btn2;
+footer i {
+  margin: 3rem;
 }
 
 /* ANIMAÇÕES */
