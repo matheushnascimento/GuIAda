@@ -106,7 +106,6 @@ span {
 }
 
 header .logo {
-  border-radius: 50%;
 
   -webkit-animation: slide-in-top 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation: slide-in-top 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -168,6 +167,10 @@ section img {
 
 #resources *:not(#all_resources, img) {
   padding: 1rem;
+}
+
+.resources h2 {
+  margin: 8rem;
 }
 
 h2 {

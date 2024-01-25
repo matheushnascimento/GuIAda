@@ -48,15 +48,6 @@
     transform: translateY(-.5rem);
   }
 
-  .logo {
-    transition: .3s;
-  }
-
-  .logo:hover {
-    border-radius: .5rem;
-    transform: scale(1.1);
-  }
-
   nav {
     display: flex !important;
     flex-direction: row;
@@ -83,12 +74,14 @@
   }
 
   .resources-wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content: space-evenly;
   }
 
   .resources-wrapper .item {
+    flex: 1 0 20%;
     text-align: left;
     max-width: 35rem;
   }
