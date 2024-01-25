@@ -8,6 +8,8 @@
     border-radius: 2rem;
   }
 
+  
+
   #all_resources img {
     margin: 0;
   }
@@ -72,6 +74,8 @@
   section {
     align-items: center;
   }
+
+  
 
   .resources-wrapper {
     display: grid;

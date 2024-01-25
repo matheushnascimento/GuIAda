@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 :root {
@@ -149,11 +150,11 @@ strong {
 }
 
 article section:first-child img {
-  max-width: 40vw;
+  /* max-width: 40vw; */
 }
 
 section img {
-  max-width: 50vw;
+  max-width: 85vw;
   max-height: 75vh;
 
   margin: 1rem auto;
